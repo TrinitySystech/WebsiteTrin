@@ -45,7 +45,7 @@ export const Contact = () => {
                 <Input placeholder="Subject" />
                 <Textarea placeholder="Your message" className="min-h-[120px]" />
                 <Button 
-                  className="w-full bg-primary text-white hover:bg-primary/90 transition-colors duration-300 transform hover:scale-105 shadow-lg" 
+                  className="w-full bg-primary text-black hover:bg-primary/90 transition-colors duration-300 transform hover:scale-105 shadow-lg" 
                 >
                   Send Message
                 </Button>
