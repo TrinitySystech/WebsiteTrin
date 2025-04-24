@@ -44,7 +44,11 @@ export const Contact = () => {
                 <Input type="email" placeholder="Email" />
                 <Input placeholder="Subject" />
                 <Textarea placeholder="Your message" className="min-h-[120px]" />
-                <Button className="w-full bg-secondary hover:bg-secondary/90">Send Message</Button>
+                <Button 
+                  className="w-full bg-primary text-white hover:bg-primary/90 transition-colors duration-300 transform hover:scale-105 shadow-lg" 
+                >
+                  Send Message
+                </Button>
               </form>
             </CardContent>
           </Card>
