@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Battery, BatteryCharging, Zap } from "lucide-react";
 
@@ -25,7 +24,7 @@ export const ProductShowcase = () => {
   ];
 
   return (
-    <section className="py-24 bg-gray-50">
+    <section id="products" className="py-24 bg-gray-50">
       <div className="container">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">Our Products</h2>

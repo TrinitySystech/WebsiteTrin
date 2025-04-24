@@ -3,6 +3,13 @@ import { Button } from "@/components/ui/button";
 import { BatteryCharging, Shield } from "lucide-react";
 
 export const Hero = () => {
+  const handleExploreProducts = () => {
+    const productSection = document.getElementById('products');
+    if (productSection) {
+      productSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="relative bg-primary py-24 sm:py-32">
       <div className="container mx-auto px-4">
@@ -15,7 +22,11 @@ export const Hero = () => {
               Trinity Systech provides cutting-edge UPS and battery solutions to keep your home powered. Never worry about power outages again.
             </p>
             <div className="mt-10 flex items-center gap-x-6">
-              <Button size="lg" className="bg-secondary hover:bg-secondary/90">
+              <Button 
+                size="lg" 
+                className="bg-secondary hover:bg-secondary/90"
+                onClick={handleExploreProducts}
+              >
                 Explore Products
               </Button>
               <Button variant="outline" size="lg" className="text-white border-white hover:bg-white/10">
