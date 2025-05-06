@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { BatteryCharging, Shield } from "lucide-react";
 
@@ -11,7 +10,7 @@ export const Hero = () => {
   };
 
   return (
-    <div className="relative bg-primary py-24 sm:py-32">
+    <div className="relative bg-primary py-24 sm:py-32"> {/* Assuming bg-primary is dark */}
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16 items-center">
           <div className="max-w-2xl">
@@ -22,16 +21,24 @@ export const Hero = () => {
               Trinity Systech provides cutting-edge UPS and battery solutions to keep your home powered. Never worry about power outages again.
             </p>
             <div className="mt-10 flex items-center gap-x-6">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-secondary hover:bg-secondary/90"
                 onClick={handleExploreProducts}
               >
                 Explore Products
               </Button>
-              <Button variant="outline" size="lg" className="text-white border-white hover:bg-white/10">
-                Contact Us
+              {/* --- Updated Contact Us Button --- */}
+              <Button
+                asChild // Add this prop
+                variant="outline"
+                size="lg"
+                // Consider making text white for better contrast on dark background
+                className="text-black border-white hover:bg-white/10 hover:text-white"
+              >
+                <a href="tel:+918660098963">Contact Us</a>
               </Button>
+              {/* --- End of Update --- */}
             </div>
           </div>
           <div className="hidden lg:block">

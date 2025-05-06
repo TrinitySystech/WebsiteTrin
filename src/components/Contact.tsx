@@ -18,7 +18,10 @@ export const Contact = () => {
             <div className="mt-8 space-y-6">
               <div className="flex items-center">
                 <Phone className="h-6 w-6 text-secondary mr-4" />
-                <span className="text-gray-700">+1 (234) 567-8900</span>
+                <a href="tel:+918660098963">Contact Us :</a>
+                <span className="text-gray-700" >
+                  <a href="tel:+918660098963"  className="text-blue-600 hover:text-blue-800 hover:underline">+918660098963</a>
+                </span>
               </div>
               <div className="flex items-center">
                 <Mail className="h-6 w-6 text-secondary mr-4" />
@@ -26,7 +29,7 @@ export const Contact = () => {
               </div>
               <div className="flex items-center">
                 <MapPin className="h-6 w-6 text-secondary mr-4" />
-                <span className="text-gray-700">123 Power Street, Tech City, TC 12345</span>
+                <span className="text-gray-700">subanapalya, Dodda Banaswadi Main Rd, Bengaluru, Karnataka 560033</span>
               </div>
             </div>
           </div>
@@ -45,7 +48,7 @@ export const Contact = () => {
                 <Input placeholder="Subject" />
                 <Textarea placeholder="Your message" className="min-h-[120px]" />
                 <Button 
-                  className="w-full bg-primary text-black hover:bg-primary/90 transition-colors duration-300 transform hover:scale-105 shadow-lg" 
+                  className="w-full bg-primary text-white hover:bg-primary/90 transition-colors duration-300 transform hover:scale-105 shadow-lg" 
                 >
                   Send Message
                 </Button>
